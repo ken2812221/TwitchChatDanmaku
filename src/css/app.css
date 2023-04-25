@@ -20,8 +20,18 @@
   content: ": ";
   color: white;
 }
+#danmaku-container[data-danmaku-mode=default] .danmaku-chat .danmaku-username .seventv-chat-user-badge-list {
+  display: none;
+}
 #danmaku-container[data-danmaku-mode=default] .danmaku-chat .danmaku-message {
   color: white;
+}
+#danmaku-container[data-danmaku-mode=default] .danmaku-chat .danmaku-message .seventv-emote-box {
+  display: inline-grid;
+  vertical-align: middle;
+  margin: var(--seventv-emote-margin);
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 #danmaku-container[data-danmaku-mode=default][data-text-decoration=stroke] .danmaku-chat {
   text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.6), 2px -2px 0 rgba(0, 0, 0, 0.6), -2px 2px 0 rgba(0, 0, 0, 0.6), 2px 2px 0 rgba(0, 0, 0, 0.6);
@@ -81,6 +91,16 @@
 #danmaku-container[data-danmaku-mode=scroll] .danmaku-chat .danmaku-username::after {
   content: ": ";
   color: white;
+}
+#danmaku-container[data-danmaku-mode=scroll] .danmaku-chat .danmaku-username .seventv-chat-user-badge-list {
+  display: none;
+}
+#danmaku-container[data-danmaku-mode=scroll] .danmaku-chat .danmaku-message .seventv-emote-box {
+  display: inline-grid;
+  vertical-align: middle;
+  margin: var(--seventv-emote-margin);
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 @keyframes danmaku-scroll-default {

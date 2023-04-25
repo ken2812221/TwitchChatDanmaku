@@ -21,10 +21,21 @@
 					content: ': ';
 					color: white;
 				}
+
+				.seventv-chat-user-badge-list {
+					display: none;
+				}
 			}
 
 			.danmaku-message {
 				color: white;
+				.seventv-emote-box {
+					display: inline-grid;
+					vertical-align: middle;
+					margin: var(--seventv-emote-margin);
+					margin-left: 0!important;
+					margin-right: 0!important;
+				}
 			}
 
 			.move {

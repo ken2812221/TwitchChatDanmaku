@@ -12,9 +12,12 @@
 		// stream
 		'.chat-scrollable-area__message-container',
 
-		//vod
+		// vod
 		'[data-test-selector="video-chat-message-list-wrapper"]',
 		'.video-chat__message-list-wrapper',
+
+		// 7tv
+		'.seventv-chat-list',
 	];
 
 	const RAW_CHAT_SELECTORS = [
@@ -22,7 +25,12 @@
 		'.chat-line__message',
 
 		// vod
-		'.vod-message'
+		'.vod-message',
+
+		// 7tv
+		'.seventv-message',
+		'.seventv-chat-vod-message-wrapper'
+
 	].map(e => `${e}:not([data-danmaku-ready])`);
 
 	const CHAT_USERNAME_SELECTORS = [
@@ -31,7 +39,10 @@
 		'.chat-author__display-name',
 
 		// vod
-		'.vod-message .video-chat__message-author'
+		'.vod-message .video-chat__message-author',
+
+		// 7tv
+		'.seventv-chat-user',
 	];
 	const CHAT_MESSAGE_SELECTORS = [
 		// stream
@@ -39,7 +50,10 @@
 		'.message',
 
 		// vod
-		'.vod-message .video-chat__message > span ~ span:last-of-type'
+		'.vod-message .video-chat__message > span ~ span:last-of-type',
+
+		// 7tv
+		'.seventv-chat-message-body'
 	];
 
 	// utils
